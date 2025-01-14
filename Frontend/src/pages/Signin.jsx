@@ -19,7 +19,7 @@ export function Signin(){
     e.preventDefault();
     async function sendData() {
       
-      await axios.post("http://localhost:3000/signin",{
+      await axios.post("http://localhost:3000/user/signin",{
         email,
         password,
   

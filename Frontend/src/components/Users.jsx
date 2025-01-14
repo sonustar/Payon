@@ -16,7 +16,7 @@ export const Users = () => {
   
   async function sendData(){
     try {
-        const result = await axios.get("http://localhost:3000/allist?filter=" + filter,{
+        const result = await axios.get("http://localhost:3000/user/allist?filter=" + filter,{
             headers: {
               Authorization: `bearer ${token}`, 
             }
@@ -48,7 +48,7 @@ export const Users = () => {
             e.preventDefault();
              
             async function sendData(){
-              const result = await axios.get("http://localhost:3000/list?filter=" + filter,{
+              const result = await axios.get("http://localhost:3000/user/list?filter=" + filter,{
                 headers: {
                   Authorization: `bearer ${token}`, // Add Authorization header
                 }

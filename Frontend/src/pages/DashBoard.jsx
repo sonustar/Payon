@@ -22,7 +22,7 @@ const DashBoard = () => {
     // He is signed in :
     async function sendData(){
       try {
-          const result = await axios.get("http://localhost:3000/balance",{
+          const result = await axios.get("http://localhost:3000/account/balance",{
               headers: {
                 Authorization: `bearer ${token}`, // Added Authorization header
               }

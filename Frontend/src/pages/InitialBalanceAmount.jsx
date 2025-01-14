@@ -12,7 +12,7 @@ export const InitialBalanceAmount = () => {
 
     async function sendData(){
       
-        await axios.get("http://localhost:3000/name",{
+        await axios.get("http://localhost:3000/user/name",{
         headers:{
           Authorization:"bearer " + localStorage.getItem("token")
         }
@@ -32,7 +32,7 @@ export const InitialBalanceAmount = () => {
 
     async function sendData(){
       
-       await axios.post("http://localhost:3000/initialbalance",{
+       await axios.post("http://localhost:3000/account/initialbalance",{
         balance
       },{
       headers:{

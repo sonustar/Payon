@@ -20,7 +20,7 @@ export const SendMoney = () => {
         
         async function sendData() {
 
-            await axios.post("http://localhost:3000/transfer",{
+            await axios.post("http://localhost:3000/account/transfer",{
                 to: sender,
                 amount
             },{

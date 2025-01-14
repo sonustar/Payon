@@ -11,7 +11,7 @@ const Appbar = () => {
     
     async function sendData(){
       try {
-          const result = await axios.get("http://localhost:3000/name",{
+          const result = await axios.get("http://localhost:3000/user/name",{
               headers: {
                 Authorization: `bearer ${token}`, // Add Authorization header
               }
